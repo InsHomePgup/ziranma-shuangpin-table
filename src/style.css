@@ -1,0 +1,18 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  html {
+    width: 100vh;
+    height: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    overflow: hidden;
+  }
+}
