@@ -111,22 +111,22 @@ const keyboardRows = computed(() => (
 
 @media screen and (orientation: portrait) and (hover: none) and (pointer: coarse) {
   .keyboard-page {
-    min-height: 100dvw;
-    padding: clamp(0.5rem, 3dvh, 2rem);
+    min-height: var(--vw, 100vw);
+    padding: clamp(0.5rem, calc(var(--vh, 100vh) * 0.03), 2rem);
   }
 
   .keyboard {
-    --key: clamp(2.2rem, 9dvh, 8rem);
-    --gap: clamp(0.2rem, 1dvh, 0.85rem);
+    --key: clamp(2.2rem, calc(var(--vh, 100vh) * 0.082), 8rem);
+    --gap: clamp(0.2rem, calc(var(--vh, 100vh) * 0.01), 0.85rem);
   }
 
   .key-initial,
   .key-final {
-    font-size: clamp(0.7rem, 1.8dvh, 1.15rem);
+    font-size: clamp(0.7rem, calc(var(--vh, 100vh) * 0.018), 1.15rem);
   }
 
   .key-letter {
-    font-size: clamp(1.3rem, 4.6dvh, 2.75rem);
+    font-size: clamp(1.3rem, calc(var(--vh, 100vh) * 0.046), 2.75rem);
   }
 }
 </style>

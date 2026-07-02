@@ -5,6 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>自然码双拼键位图</title>
+    <script>
+      (function () {
+        function setViewportUnits() {
+          document.documentElement.style.setProperty('--vw', window.innerWidth + 'px')
+          document.documentElement.style.setProperty('--vh', window.innerHeight + 'px')
+        }
+        setViewportUnits()
+        window.addEventListener('resize', setViewportUnits)
+        window.addEventListener('orientationchange', setViewportUnits)
+      })()
+    </script>
   </head>
   <body>
     <div id="app"></div>

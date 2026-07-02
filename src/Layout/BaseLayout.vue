@@ -17,4 +17,11 @@
 .content {
   min-height: 100vh;
 }
+
+@media screen and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  .base-layout,
+  .content {
+    min-height: var(--vw, 100vw);
+  }
+}
 </style>
