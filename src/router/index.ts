@@ -8,10 +8,13 @@ function wrapRoutes(autoRoutes: RouteRecordRaw[]) {
     {
       path: '/',
       component: BaseLayout,
-      children: autoRoutes.map(r => ({
-        ...r,
-        path: r.path === '/' ? '' : r.path.slice(1),
-      })),
+      children: [
+        ...autoRoutes.map(r => ({
+          ...r,
+          path: r.path === '/' ? '' : r.path.slice(1),
+        })),
+        { path: ':pathMatch(.*)*', redirect: '/' },
+      ],
     },
   ]
 }

@@ -11,18 +11,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TBadge: typeof import('tdesign-vue-next')['Badge']
-    TButton: typeof import('tdesign-vue-next')['Button']
-    TDialog: typeof import('tdesign-vue-next')['Dialog']
-    TInput: typeof import('tdesign-vue-next')['Input']
-    TOption: typeof import('tdesign-vue-next')['Option']
-    TSelect: typeof import('tdesign-vue-next')['Select']
-    TSpace: typeof import('tdesign-vue-next')['Space']
-    TTable: typeof import('tdesign-vue-next')['Table']
-    TTag: typeof import('tdesign-vue-next')['Tag']
-    TTextarea: typeof import('tdesign-vue-next')['Textarea']
   }
 }

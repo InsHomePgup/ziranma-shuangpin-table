@@ -38,41 +38,6 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/about': RouteRecordInfo<
-      '/about',
-      '/about',
-      Record<never, never>,
-      Record<never, never>,
-      | '/about/card'
-    >,
-    '/about/card': RouteRecordInfo<
-      '/about/card',
-      '/about/card',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/contact': RouteRecordInfo<
-      '/contact',
-      '/contact',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/demo': RouteRecordInfo<
-      '/demo',
-      '/demo',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
-    '/user/[id]': RouteRecordInfo<
-      '/user/[id]',
-      '/user/:id',
-      { id: ParamValue<true> },
-      { id: ParamValue<false> },
-      | never
-    >,
   }
 
   /**
@@ -93,47 +58,6 @@ declare module 'vue-router/auto-routes' {
         | never
       pathParamNames:
         | never
-    }
-    'src/pages/about.vue': {
-      routes:
-        | '/about'
-        | '/about/card'
-      views:
-        | 'default'
-      pathParamNames:
-        | never
-    }
-    'src/pages/about/card.vue': {
-      routes:
-        | '/about/card'
-      views:
-        | never
-      pathParamNames:
-        | never
-    }
-    'src/pages/contact.vue': {
-      routes:
-        | '/contact'
-      views:
-        | never
-      pathParamNames:
-        | never
-    }
-    'src/pages/demo.vue': {
-      routes:
-        | '/demo'
-      views:
-        | never
-      pathParamNames:
-        | never
-    }
-    'src/pages/user/[id].vue': {
-      routes:
-        | '/user/[id]'
-      views:
-        | never
-      pathParamNames:
-        | 'id'
     }
   }
 
